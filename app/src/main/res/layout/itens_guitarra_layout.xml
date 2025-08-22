@@ -8,24 +8,25 @@
     tools:context=".ItensGuitarraActivity">
 
     <com.google.android.material.tabs.TabLayout
+        android:id="@+id/idTabLayoutItensGuitar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/idTabLayoutItensGuitar">
+        app:tabMode="fixed">
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Guitarra"/>
+            android:text="Guitarra" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Acessórios"/>
+            android:text="Acessórios" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Loja"/>
+            android:text="Loja" />
 
     </com.google.android.material.tabs.TabLayout>
 
