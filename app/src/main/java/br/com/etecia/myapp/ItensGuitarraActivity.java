@@ -44,6 +44,10 @@ public class ItensGuitarraActivity extends AppCompatActivity {
             }
         });
 
+        AdapterItensGuitarra adapterItensGuitarra = new AdapterItensGuitarra(this);
+
+        idViewPagerItensGuitarra.setAdapter(adapterItensGuitarra);
+
 
     }
 }
