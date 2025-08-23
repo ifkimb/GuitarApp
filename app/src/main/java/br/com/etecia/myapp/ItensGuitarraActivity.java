@@ -9,11 +9,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.viewpager2.widget.ViewPager2;
 
 import com.google.android.material.appbar.MaterialToolbar;
+import com.google.android.material.tabs.TabLayout;
 
 public class ItensGuitarraActivity extends AppCompatActivity {
 
+    TabLayout idTabLayoutItensGuitar;
+    ViewPager2 idViewPagerItensGuitarra;
     MaterialToolbar idToolBarItens;
 
     @Override
@@ -29,11 +33,17 @@ public class ItensGuitarraActivity extends AppCompatActivity {
 
         idToolBarItens = findViewById(R.id.idToolBarItens);
 
+        idViewPagerItensGuitarra = findViewById(R.id.idViewPagerItensGuitarra);
+
+        idTabLayoutItensGuitar = findViewById(R.id.idTabLayoutItensGuitar);
+
         idToolBarItens.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), MenuPrincipalActivity.class));
             }
         });
+
+
     }
 }
