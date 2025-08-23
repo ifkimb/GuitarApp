@@ -13,11 +13,22 @@ public class AdapterItensGuitarra extends FragmentStateAdapter {
     @NonNull
     @Override
     public Fragment createFragment(int position) {
-        return null;
+
+        switch (position){
+            case 0:
+                return new GuitarraFragment();
+            case 1:
+                return new AcessoriosFragment();
+            case 2:
+                return new LojaFragment();
+            default:
+                return new GuitarraFragment();
+        }
+
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return 3;
     }
 }
