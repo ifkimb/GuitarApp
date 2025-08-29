@@ -65,6 +65,14 @@ public class ItensGuitarraActivity extends AppCompatActivity {
             }
         });
 
+        idViewPagerItensGuitarra.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
+            @Override
+            public void onPageSelected(int position) {
+                super.onPageSelected(position);
+                idTabLayoutItensGuitar.getTabAt(position).select();
+            }
+        });
+
 
     }
 }
