@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="150dp">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:orientation="vertical">
@@ -23,12 +23,12 @@
             android:layout_centerInParent="true"
             android:layout_gravity="center_vertical"
             android:layout_toRightOf="@id/idImgCardGuitarra"
-            android:text="Titulo"
-            android:textColor="#E91E63"
-            android:textSize="25sp"
+            android:text="Título"
+            android:textColor="#000000"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
 
-    </LinearLayout>
+    </RelativeLayout>
 
 </androidx.cardview.widget.CardView>

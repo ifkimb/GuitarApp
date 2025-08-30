@@ -16,8 +16,9 @@ import com.google.android.material.tabs.TabLayout;
 
 public class ItensGuitarraActivity extends AppCompatActivity {
 
-    TabLayout idTabLayoutItensGuitar;
     ViewPager2 idViewPagerItensGuitarra;
+    TabLayout idTabLayoutItensGuitar;
+
     MaterialToolbar idToolBarItens;
 
     @Override
@@ -34,19 +35,19 @@ public class ItensGuitarraActivity extends AppCompatActivity {
         idToolBarItens = findViewById(R.id.idToolBarItens);
 
         idViewPagerItensGuitarra = findViewById(R.id.idViewPagerItensGuitarra);
-
         idTabLayoutItensGuitar = findViewById(R.id.idTabLayoutItensGuitar);
 
         idToolBarItens.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), MenuPrincipalActivity.class));
+                startActivity(new Intent(getApplicationContext(),
+                        MenuPrincipalActivity.class));
             }
         });
 
-        AdapterItensGuitarra adapterItensGuitarra = new AdapterItensGuitarra(this);
+        AdapterItensGuitarra adapterItensMiniatura = new AdapterItensGuitarra(this);
 
-        idViewPagerItensGuitarra.setAdapter(adapterItensGuitarra);
+        idViewPagerItensGuitarra.setAdapter(adapterItensMiniatura);
 
         idTabLayoutItensGuitar.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
@@ -64,7 +65,6 @@ public class ItensGuitarraActivity extends AppCompatActivity {
 
             }
         });
-
         idViewPagerItensGuitarra.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
             @Override
             public void onPageSelected(int position) {
@@ -72,6 +72,8 @@ public class ItensGuitarraActivity extends AppCompatActivity {
                 idTabLayoutItensGuitar.getTabAt(position).select();
             }
         });
+
+
 
 
     }
