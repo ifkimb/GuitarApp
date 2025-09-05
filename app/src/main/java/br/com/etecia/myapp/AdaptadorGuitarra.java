@@ -1,6 +1,7 @@
 package br.com.etecia.myapp;
 
 import android.content.Context;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -21,11 +22,20 @@ public class AdaptadorGuitarra extends RecyclerView.Adapter<AdaptadorGuitarra.Vi
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return null;
+
+        View view;
+
+        LayoutInflater inflater = LayoutInflater.from(context);
+
+        view = inflater.inflate(R.layout.modelo_guitarra, parent, false);
+
+        return new ViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+
+        holder.
 
     }
 
