@@ -10,7 +10,8 @@ public class Guitarra {
         this.tituloGuitarra = idTituloGuitarra;
     }
 
-    public int getImgCardGuitarra() {return imgCardGuitarra; }
+    public int getImgCardGuitarra() {
+        return imgCardGuitarra; }
 
     public void setImgCardGuitarra(int imgCardGuitarra) {
         this.imgCardGuitarra = imgCardGuitarra;
