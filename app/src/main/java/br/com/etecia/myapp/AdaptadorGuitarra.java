@@ -4,6 +4,8 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -34,20 +36,29 @@ public class AdaptadorGuitarra extends RecyclerView.Adapter<AdaptadorGuitarra.Vi
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-
-        holder.
-
+        holder.idTituloGuitarra.setText(lstGuitarra.get(position).getTituloGuitarra());
+        holder.imgCardGuitarra.setImageResource(lstGuitarra.get(position).getImgCardGuitarra());
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return lstGuitarra.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
 
+        ImageView imgCardGuitarra;
+
+        TextView idTituloGuitarra;
+
+
+
+
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
+
+            imgCardGuitarra = itemView.findViewById(R.id.imgCardGuitarra);
+            idTituloGuitarra = itemView.findViewById(R.id.idTituloGuitarra);
         }
     }
 }

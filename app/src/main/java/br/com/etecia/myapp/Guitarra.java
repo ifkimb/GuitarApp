@@ -2,27 +2,25 @@ package br.com.etecia.myapp;
 
 public class Guitarra {
 
-    private int idImgCardGuitarra;
-    private String idTituloGuitarra;
+    private int imgCardGuitarra;
+    private String tituloGuitarra;
 
     public Guitarra(int idImgCardGuitarra, String idTituloGuitarra){
-        this.idImgCardGuitarra = idImgCardGuitarra;
-        this.idTituloGuitarra = idTituloGuitarra;
+        this.imgCardGuitarra = idImgCardGuitarra;
+        this.tituloGuitarra = idTituloGuitarra;
     }
 
-    public int getIdImgCardGuitarra() {
-        return idImgCardGuitarra;
+    public int getImgCardGuitarra() {return imgCardGuitarra; }
+
+    public void setImgCardGuitarra(int imgCardGuitarra) {
+        this.imgCardGuitarra = imgCardGuitarra;
     }
 
-    public void setIdImgCardGuitarra(int idImgCardGuitarra) {
-        this.idImgCardGuitarra = idImgCardGuitarra;
+    public String getTituloGuitarra() {
+        return tituloGuitarra;
     }
 
-    public String getIdTituloGuitarra() {
-        return idTituloGuitarra;
-    }
-
-    public void setIdTituloGuitarra(String idTituloGuitarra) {
-        this.idTituloGuitarra = idTituloGuitarra;
+    public void setTituloGuitarra(String tituloGuitarra) {
+        this.tituloGuitarra = tituloGuitarra;
     }
 }
