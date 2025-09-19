@@ -1,6 +1,8 @@
 package br.com.etecia.myapp;
 
 import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
@@ -24,6 +26,11 @@ public class AdaptadorAcessorios extends RecyclerView.Adapter<AdaptadorAcessorio
     @Override
     public AdaptadorAcessorios.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         return null;
+        View view;
+        LayoutInflater inflater = LayoutInflater.from(context);
+        view = inflater.inflate(R.layout.modelo_acessorios, parent, false);
+
+
     }
 
     @Override
