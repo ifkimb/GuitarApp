@@ -31,7 +31,8 @@ public class AcessoriosFragment extends Fragment {
         lstAcessorios.add(new Acessorios(R.drawable.amplificador,"Amplificador"));
         lstAcessorios.add(new Acessorios(R.drawable.slide,"Slide"));
 
-        AdaptadorGuitarra
+        AdaptadorAcessorios adapter = new AdaptadorAcessorios(getContext(), lstAcessorios);
+
 
         return view;
     }
