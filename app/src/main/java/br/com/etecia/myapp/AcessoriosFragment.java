@@ -3,6 +3,7 @@ package br.com.etecia.myapp;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
@@ -31,7 +32,11 @@ public class AcessoriosFragment extends Fragment {
         lstAcessorios.add(new Acessorios(R.drawable.amplificador,"Amplificador"));
         lstAcessorios.add(new Acessorios(R.drawable.slide,"Slide"));
 
-        AdaptadorAcessorios adapter = new AdaptadorAcessorios(getContext(), lstAcessorios);
+        AdaptadorAcessorios adapteracess = new AdaptadorAcessorios(getContext(), lstAcessorios);
+
+        idRecyclerViewAcessorios.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false));
+
+        idRecyclerViewAcessorios.setAdapter(adapteracess);
 
 
         return view;

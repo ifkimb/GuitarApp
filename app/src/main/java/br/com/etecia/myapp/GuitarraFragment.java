@@ -27,12 +27,12 @@ public class GuitarraFragment extends Fragment {
         idRecyclerViewGuitarra = view.findViewById(R.id.idRecyclerViewGuitarra);
 
         lstGuitarra = new ArrayList<>();
-        lstGuitarra.add(new Guitarra(R.drawable.guitarra_allblack, "guitarra all black"));
-        lstGuitarra.add(new Guitarra(R.drawable.guitarra_azul, "guitarra azul"));
-        lstGuitarra.add(new Guitarra(R.drawable.guitarra_branca, "guitarra branca"));
-        lstGuitarra.add(new Guitarra(R.drawable.guitarra_madeira, "guitarra madeira"));
-        lstGuitarra.add(new Guitarra(R.drawable.guitarra_strinberg, "guitarra strinberg"));
-        lstGuitarra.add(new Guitarra(R.drawable.guitarra_vermelha, "guitarra vermelha"));
+        lstGuitarra.add(new Guitarra(R.drawable.guitarra_allblack, "Guitarra all black"));
+        lstGuitarra.add(new Guitarra(R.drawable.guitarra_azul, "Guitarra azul"));
+        lstGuitarra.add(new Guitarra(R.drawable.guitarra_branca, "Guitarra branca"));
+        lstGuitarra.add(new Guitarra(R.drawable.guitarra_madeira, "Guitarra madeira"));
+        lstGuitarra.add(new Guitarra(R.drawable.guitarra_strinberg, "Guitarra strinberg"));
+        lstGuitarra.add(new Guitarra(R.drawable.guitarra_vermelha, "Guitarra vermelha"));
 
         AdaptadorGuitarra adapter = new AdaptadorGuitarra(getContext(), lstGuitarra);
 
