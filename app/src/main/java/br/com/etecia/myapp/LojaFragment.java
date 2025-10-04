@@ -24,9 +24,8 @@ public class LojaFragment extends Fragment {
         View view =  inflater.inflate(R.layout.fragment_loja, container, false);
 
         idRecyclerViewLoja = view.findViewById(R.id.idRecyclerViewLoja);
-
         lstLoja = new ArrayList<>();
-        lstLoja.add(new Loja());
+        lstLoja.add(new Loja(R.drawable.fender));
 
         return view;
     }
